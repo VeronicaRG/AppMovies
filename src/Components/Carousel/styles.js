@@ -1,18 +1,11 @@
 import styled from 'styled-components/native';
 
-export const Container = styled.ScrollView`
-  background: red;
-  flex: 1;
-  width: 100%;
-  height: 100px;
-`;
-
-export const ViewFilm = styled.View``;
+export const Container = styled.ScrollView``;
 
 export const PosterFilm = styled.View`
-  background: #ffffff;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 400px;
+  padding: 40px;
 `;
 
 export const OptionsButtons = styled.View`
@@ -26,31 +19,23 @@ export const LeftButton = styled.TouchableOpacity`
   height: 30px;
 `;
 
-export const LeftButtonIcon = styled.Image`
-  background: red;
-  width: 30px;
-  height: 30px;
-`;
+export const LeftButtonIcon = styled.Image``;
 
 export const RightButton = styled.TouchableOpacity`
   background: green;
   width: 30px;
   height: 30px;
 `;
-export const RightButtonIcon = styled.Image`
-  background: green;
-  width: 30px;
-  height: 30px;
-`;
+export const RightButtonIcon = styled.Image``;
 
 export const AboutFilm = styled.View`
   justify-content: space-between;
   align-items: center;
+  margin-top: 200px;
 `;
 
 export const NameFilm = styled.Text`
   font-size: 20px;
-  width: bold;
   color: #ffffff;
 `;
 
@@ -61,9 +46,12 @@ export const GenderFilm = styled.Text`
 
 export const ButtonPlayFilm = styled.TouchableOpacity`
   background: red;
-  width: 300px;
-  height: 100px;
-  border-radius: 30px;
+  width: 280px;
+  height: 50px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
 `;
 
 export const ButtonPlayFilmText = styled.Text`

@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Container,
-  ViewFilm,
   PosterFilm,
   OptionsButtons,
   LeftButton,
@@ -18,9 +17,7 @@ import {
 const Carousel = () => {
   return (
     <Container>
-      <ViewFilm>
-        <PosterFilm />
-
+      <PosterFilm>
         <OptionsButtons>
           <LeftButton>
             <LeftButtonIcon />
@@ -29,7 +26,6 @@ const Carousel = () => {
             <RightButtonIcon />
           </RightButton>
         </OptionsButtons>
-
         <AboutFilm>
           <NameFilm>Vero</NameFilm>
           <GenderFilm>Ruiz</GenderFilm>
@@ -37,7 +33,7 @@ const Carousel = () => {
             <ButtonPlayFilmText>Garcia</ButtonPlayFilmText>
           </ButtonPlayFilm>
         </AboutFilm>
-      </ViewFilm>
+      </PosterFilm>
     </Container>
   );
 };
