@@ -10,19 +10,26 @@ import {
   PosterFilm,
 } from './styles';
 
-const Catalog = () => {
+const Catalog = ({topic, imageCatalog, bigger}) => {
+  const imagePath = 'https://image.tmdb.org/t/p/w500';
+
   return (
     <Container>
       <ViewTopic>
-        <TextTopic>Hola</TextTopic>
+        <TextTopic>{topic}</TextTopic>
         <Arrow>
           <Icon />
         </Arrow>
       </ViewTopic>
       <BoxPosterFilm>
-        <Film>
-          <PosterFilm />
-        </Film>
+        {imageCatalog?.map(movie => (
+          <Film key={movie.id}>
+            <PosterFilm
+              bigger={bigger}
+              source={{uri: `${imagePath}${movie.backdrop_path}`}}
+            />
+          </Film>
+        ))}
       </BoxPosterFilm>
     </Container>
   );
