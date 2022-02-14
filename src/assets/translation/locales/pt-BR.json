@@ -1,0 +1,36 @@
+{
+  "translation": {
+    "language":"pt-BR",
+    "tabs":{
+      "movies":"Filmes",
+      "series":"Series",
+      "comingSoon":"Lanzamentos",
+      "search":"Procurar"
+    },
+    "catalags":{
+      "discover":"Descobrir",
+      "trending":"Tendência",
+      "popular":"Popular",
+      "topRated":"Mais prestigiados",
+      "upcoming":"Próximos",
+      "onTheAir":"No ar"
+    },
+    "buttons":{
+      "watchNow":"Assistir agora",
+      "playNow":"Reproduzir agora",
+      "myList":"Minha lista",
+      "like":"Gosto disso",
+      "share":"Compartilhar"
+    },
+    "inPut":{
+      "nameOfTheMovie/Serie":"Nome da filme/serie"
+    },
+    "titles":{
+      "recommendation":"Recomendações",
+      "comingSoon":"Próximos",
+      "findYourMovie":"Achar sua filme/serie",
+      "trendingNow":"Tendência"
+    }
+  }
+}
+

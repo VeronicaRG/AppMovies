@@ -1,0 +1,36 @@
+{
+  "translation": {
+    "language":"EN",
+    "tabs":{
+      "movies":"Movies",
+      "series":"Series",
+      "comingSoon":"ComingSoon",
+      "search":"Search"
+    },
+    "catalags":{
+      "discover":"Discover",
+      "trending":"Trending",
+      "popular":"Popular",
+      "topRated":"TopRated",
+      "upcoming":"Upcoming",
+      "onTheAir":"On the air"
+    },
+    "buttons":{
+      "watchNow":"Watch now",
+      "playNow":"Play now",
+      "myList":"My List",
+      "like":"Like",
+      "share":"Share"
+    },
+    "inPut":{
+      "nameOfTheMovie/Serie":"Name of the movie/serie"
+    },
+    "titles":{
+      "recommendation":"Recommendation",
+      "comingSoon":"Coming soon",
+      "findYourMovie":"Find your movie/serie",
+      "trendingNow":"Trending Now"
+    }
+  }
+}
+
