@@ -3,16 +3,11 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex: 1;
   width: 100%;
-  height: 320px;
-  background: #1c1825;
+  height: 400px;
+  background: #da1c3b;
 `;
 
-export const BoxPosterFilm = styled.ScrollView.attrs({
-  horizontal: true,
-})`
-  width: 100%;
-  background: #db193c;
-`;
+export const BoxPosterFilm = styled.View``;
 
 export const Film = styled.View`
   background: #1c1825;
@@ -24,12 +19,12 @@ export const Film = styled.View`
 export const PosterFilm = styled.Image`
   width: 100%;
   height: 260px;
-  border-radius: 8px;
-  background: #1c1825;
+  background: red;
 `;
 
 export const ViewTopic = styled.View`
-  margin: 10px;
+  height: 130px;
+  padding: 10px;
   background: #1c1825;
 `;
 

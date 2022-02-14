@@ -1,10 +1,10 @@
 import React from 'react';
+import {ChevronRight} from '../../svgs';
 import {
   Container,
   ViewTopic,
   TextTopic,
   Arrow,
-  Icon,
   BoxPosterFilm,
   Film,
   PosterFilm,
@@ -18,7 +18,7 @@ const Catalog = ({topic, imageCatalog, bigger}) => {
       <ViewTopic>
         <TextTopic>{topic}</TextTopic>
         <Arrow>
-          <Icon />
+          <ChevronRight />
         </Arrow>
       </ViewTopic>
       <BoxPosterFilm>

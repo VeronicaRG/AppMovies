@@ -54,7 +54,7 @@ export function App() {
           component={ComingSoon}
           options={{
             tabBarIcon: ({focused, color, size}) => (
-              <SearchIcon
+              <Calendar
                 height={size ? size : 24}
                 width={size ? size : 24}
                 color={focused ? color : '#B8B7C3'}
@@ -67,7 +67,7 @@ export function App() {
           component={Searching}
           options={{
             tabBarIcon: ({focused, color, size}) => (
-              <Calendar
+              <SearchIcon
                 height={size ? size : 24}
                 width={size ? size : 24}
                 color={focused ? color : '#B8B7C3'}

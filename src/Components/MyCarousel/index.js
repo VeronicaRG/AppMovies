@@ -13,7 +13,7 @@ import {
   DegradeBottom,
 } from './styles';
 
-const MyCarousel = ({data, buttonPress, genres}) => {
+const MyCarousel = ({data, buttonPress, withGenre, genres}) => {
   const imagePath = 'https://image.tmdb.org/t/p/w500';
   return (
     <Container>
@@ -31,12 +31,16 @@ const MyCarousel = ({data, buttonPress, genres}) => {
             <PosterFilm source={{uri: `${imagePath}${item.backdrop_path}`}} />
 
             <AboutFilm>
-              <NameFilm>{item.original_title}</NameFilm>
-              <GenderFilm>
-                {item.genre_ids.map(
-                  id => genres.find(genre => genre.id === id).name,
-                )}
-              </GenderFilm>
+              <NameFilm numberOfLines={1}>
+                {item?.original_title || item.name}
+              </NameFilm>
+              {withGenre && (
+                <GenderFilm>
+                  {item?.genre_ids?.map(
+                    id => genres?.find(genre => genre?.id === id).name,
+                  )}
+                </GenderFilm>
+              )}
               <ButtonPlayFilm onPress={buttonPress}>
                 <ButtonPlayFilmText>Watch Now</ButtonPlayFilmText>
               </ButtonPlayFilm>

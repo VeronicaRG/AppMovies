@@ -1,30 +1,25 @@
 import React from 'react';
 import {
   Container,
-  BoxPosterFilm,
-  Film,
   PosterFilm,
   ViewTopic,
   NameMovie,
   Review,
+  BoxPosterFilm,
 } from './styles';
 
-const MovieReview = ({nameMovie, review, imageMovieReview}) => {
+const MovieReview = ({movie}) => {
   const imagePath = 'https://image.tmdb.org/t/p/w500';
 
   return (
     <Container>
       <BoxPosterFilm>
-        {imageMovieReview?.map(movie => (
-          <Film>
-            <PosterFilm source={{uri: `${imagePath}${movie.backdrop_path}`}} />
-          </Film>
-        ))}
+        <PosterFilm source={{uri: `${imagePath}${movie.backdrop_path}`}} />
+        <ViewTopic>
+          <NameMovie>{movie.original_title}</NameMovie>
+          <Review numberOfLines={3}>{movie.overview}</Review>
+        </ViewTopic>
       </BoxPosterFilm>
-      <ViewTopic>
-        <NameMovie>{nameMovie}</NameMovie>
-        <Review>{review}</Review>
-      </ViewTopic>
     </Container>
   );
 };

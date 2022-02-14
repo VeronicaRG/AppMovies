@@ -19,13 +19,8 @@ export const TextTopic = styled.Text`
 `;
 
 export const Arrow = styled.View`
-  width: 10px;
-  height: 20px;
   border-radius: 5px;
-  background: #de1a3a;
 `;
-
-export const Icon = styled.Image``;
 
 export const BoxPosterFilm = styled.ScrollView.attrs({
   horizontal: true,
